@@ -210,18 +210,35 @@
 # mob = Mobile("Pixel 7", 65000, "Google")
 # mob.show_details()
 
-class BankAccount:
-    def __init__(self, holder, balance):
-        self.holder = holder
-        self.balance = balance
+# class BankAccount:
+#     def __init__(self, holder, balance):
+#         self.holder = holder
+#         self.balance = balance
 
-class SavingsAccount(BankAccount):
-    def __init__(self, holder, balance, interest):
-        super().__init__(holder,balance)
-        self.interest = interest
+# class SavingsAccount(BankAccount):
+#     def __init__(self, holder, balance, interest):
+#         super().__init__(holder,balance)
+#         self.interest = interest
 
-    def show(self):
-        print(self.holder, self.balance, self.interest)
+#     def show(self):
+#         print(self.holder, self.balance, self.interest)
 
-acc = SavingsAccount("Zaid", 5000, 5)
-acc.show()
+# acc = SavingsAccount("Zaid", 5000, 5)
+# acc.show()
+
+
+# class Employee:
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
+
+# class Manager(Employee):
+#     def __init__(self, name, salary, dept):
+#         super().__init__(name,salary)
+#         self.dept = dept
+
+#     def show(self):
+#         print(self.name, self.salary, self.dept)
+
+# m = Manager("Ali", 60000, "IT")
+# m.show()
