@@ -122,10 +122,10 @@ class University:
         self.__university_name = "Mehran University"
 
     def get_university_name(self):
-        print("University Name: ",self.__university_name)
+        return self.__university_name
 
 uni = University()
-uni.get_university_name()
+print(uni.get_university_name())
 
 
 # 3. Combine setter and getter
@@ -148,13 +148,13 @@ class Mobile:
 mob = Mobile()
 
 # Current Price
-print("Price",mob.get_price())
+print("Price: ",mob.get_price())
 
 # Price Updated
 mob.set_price(80000)
 
 # Again Print
-print("Price",mob.get_price())
+print("Price: ",mob.get_price())
 
 
 # 4. Combine Getter and Setter
@@ -179,3 +179,5 @@ print(exam.get_marks())
 
 exam.set_marks(120)
 print(exam.get_marks())
+
+
