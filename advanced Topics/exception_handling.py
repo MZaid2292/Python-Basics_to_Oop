@@ -1,0 +1,173 @@
+
+# Exception: Exception is an error that comes during execution of program.
+
+# Exception Q handle karty hain? Like we have a code
+ 
+# num = int(input("Enter Number: ")) #hamne input abc diya
+# print(num) 
+# print("Program End")
+
+# Output: value error aega because ham integer input le rahe hain or de string rahe hain
+# Program wahi stop hojaega lekin if ham exception handling use karen to 
+
+# try:
+#     num = int(input("Enter Number: "))
+#     print(num)
+# except:
+#     print("Invalid Number")
+
+# print("program end")
+
+
+# Try: is code ko try karo. Agr error ae to program stop nh karo 
+# Except: Agr error ae to ye code chala do 
+
+# Example:
+# 1.
+# try:
+#     number = int(input("Enter Number: "))
+#     print(number)
+
+# except:
+#     print("Please Enter a valid number")
+
+# 2.
+# try:
+#     a = 10
+#     b = 0
+#     print(a / b)
+# except:
+#     print("Can not divide by zero")    
+
+# 3.
+# try:
+#     numbers = [10,20,30]
+#     print(numbers[5])
+# except:
+#     print("Index doesn't exist.")    
+
+
+# 4. Multiple Exceptions
+# try:
+#     num1 = int(input("Enter first number"))
+#     num2 = int(input("Enter second number"))
+#     print(num1 / num2)
+
+# except ValueError:
+#     print("Only numbers are allowed")
+
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
+
+
+# try:
+#     numbers = int(input("Enter Number: "))
+
+# except Exception as e:
+#     print(e) 
+
+
+# except: → Catches the error, but does not give you the actual error message.
+# except Exception as e: → Catches the error and stores the actual error message in e.
+
+
+# -------------------------------Practice Questions----------------------------------------------
+# 1.
+# try:
+#     age = int(input("Enter your age: "))
+#     print("Your age is: ",age)
+
+# except:
+#     print("Please enter a valid age")
+
+# 2.
+# try:
+#     num1 = int(input("Enter First Number: "))
+#     num2 = int(input("Enter Second Number: "))
+#     print(num1 / num2)
+# except ValueError:
+#     print("Enter a valid numbers")
+
+# except ZeroDivisionError:
+#     print("Cannot divide zero")
+
+# 3.
+# try:
+#     numbers = [10,20,30,40]
+#     index = int(input("Enter Index"))
+#     print(numbers[index])
+
+# except:
+#     print("Index doesn't exist. ")
+
+
+# # 4.
+# try:
+#     student = {
+#         "name":"Muhammad Zaid",
+#         "age":23
+#     }
+#     key = input("Enter Key")
+#     print(student[key])
+
+# except KeyError:
+#     print("Enter a valid key")
+
+
+# try:
+#     num1 = int(input("Enter First Number"))
+#     num2 = int(input("Enter Second Number"))
+
+#     result = num1 / num2
+
+# except ValueError:
+#     print("Only numbers are allowed")
+
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
+
+# else:
+#     print("Result: ",result)
+
+# try:
+#     pin = int(input("Enter PIN: "))
+
+# except ValueError:
+#     print("Invalid PIN")
+
+# else:
+#     print("Login Successful")
+
+
+
+#The else block executes only if no exception occurs in the try block.
+    
+# try:
+#     subjects = ["Python","Java","Flutter","React"]
+
+#     index = int(input("Enter index:"))
+#     print("Selected Subject:", subjects[index])
+
+# except ValueError:
+#     print("Subject not found")
+
+# except IndexError:
+#     print("Index not found")
+
+
+
+try:
+    subjects = ["Python", "Java", "Flutter", "React"]
+
+    index = int(input("Enter index:"))
+    subject = subjects[index]
+
+except ValueError:
+    print("Please enter a valid number.")
+
+except IndexError:
+    print("Subject not found.")
+
+else:
+    print("Selected Subject:", subject)
+    
