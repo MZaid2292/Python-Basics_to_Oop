@@ -144,27 +144,26 @@
     
 
 
-# # try:
-# #     subjects = ["Python", "Java", "Flutter", "React"]
+# try:
+#     subjects = ["Python", "Java", "Flutter", "React"]
 
-# #     index = int(input("Enter index:"))
-# #     subject = subjects[index]
+#     index = int(input("Enter index:"))
+#     subject = subjects[index]
 
-# # except ValueError:
-# #     print("Please enter a valid number.")
+# except ValueError:
+#     print("Please enter a valid number.")
 
-# # except IndexError:
-# #     print("Subject not found.")
+# except IndexError:
+#     print("Subject not found.")
 
-# # else:
-# #     print("Selected Subject:", subject)
+# else:
+#     print("Selected Subject:", subject)
     
 
 
 # # Finally Keyword: The finally block always executes, whether an exception occurs or not.
 
 
-# 1.
 # try:
 #     student = {
 #         "name":"Muhammad Zaid",
@@ -182,7 +181,7 @@
 #     print("Program Finished")
 
 
-# 2.
+# # 1.
 # try:
 #     id = int(input("Enter Student ID: "))
     
@@ -198,7 +197,7 @@
 #     print("Session Closed")
 
 
-# 3.
+# # 2.
 # try:
 #     products = {
 #         "laptop":120000,
@@ -220,7 +219,7 @@
 #     print("Thank you for visiting our store")
 
 
-# 3.
+# # 3.
 # try:
 #     books = ["Python","Flutter","Java","React"]
 
@@ -241,7 +240,7 @@
 
 
 
-# 4.
+# # 4.
 # try:
 #     balance = 100000
 
@@ -262,40 +261,75 @@
 # finally:
 #     print("Thank you for banking with us.")
     
-# 5.
-try:
-    num1 = int(input("Enter First Number: "))
-    num2 = int(input("Enter second Number: "))
-    operator = input("Enter an operator (+, -, *, /): ")
-    print("Selected Operator: ",operator)
+# # 5.
+# try:
+#     num1 = int(input("Enter First Number: "))
+#     num2 = int(input("Enter second Number: "))
+#     operator = input("Enter an operator (+, -, *, /): ")
+#     print("Selected Operator: ",operator)
 
-    if operator == "+":
-        result = num1 + num2
+#     if operator == "+":
+#         result = num1 + num2
 
-    elif operator == "-":
-        result = num1 - num2
+#     elif operator == "-":
+#         result = num1 - num2
         
-    elif operator == "*":
-        result = num1 * num2
+#     elif operator == "*":
+#         result = num1 * num2
         
-    elif operator == "/":
-        result = num1 / num2
+#     elif operator == "/":
+#         result = num1 / num2
        
 
-    else:
-        print("Invalid Operator")
+#     else:
+#         print("Invalid Operator")
 
-except ValueError:
-    print("Only numbers are allowed")
+# except ValueError:
+#     print("Only numbers are allowed")
 
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
 
-else:
-    print("Result: ",result)
+# else:
+#     print("Result: ",result)
     
 
-finally:
-    print("Calculator Closed")
+# finally:
+#     print("Calculator Closed")
 
 
+
+# Raise: raise is used to manually generate an exception when a condition is not acceptable.
+
+# try:
+#     age = int(input("Enter your age: "))
+
+#     if age < 0:
+#         raise ValueError("Age cannot be negeative")
+#     print("Your age is: ",age)
+
+# except Exception as e:
+#     print(e)
+
+
+# try:
+#     amount = int(input("Enter Amount: "))
+
+#     if amount <= 0:
+#         raise ValueError("Amount must be greater than 0")
+    
+#     print("Amount is: ",amount)
+
+# except Exception as e:
+#     print(e)
+
+try:
+    marks = int(input("Enter Marks: "))
+
+    if marks < 0 or marks > 100:
+        raise ValueError("Marks must be between 0 and 100")
+    
+    print("Marks: ",marks)
+
+except Exception as e:
+    print(e)
