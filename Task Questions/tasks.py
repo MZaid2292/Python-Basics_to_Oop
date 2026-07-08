@@ -15,7 +15,6 @@ class FormField:
         self.field_type = field_type
 
 
-# ---------------- Password Validation ----------------
 
 def password_validators(str_input):
 
@@ -34,7 +33,6 @@ def password_validators(str_input):
     return is_pwd_valid
 
 
-# ---------------- Input Validation ----------------
 
 def enter_value(value_label="Name", field_type="String"):
 
