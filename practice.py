@@ -206,11 +206,33 @@
 # print(student2)
 
 # clear(): clear() removes all items from a dictionary.
-student = {
-    "name":"Muhamamd Zaid",
-    "age":23,
-    "city":"Hyderabad"
+# student = {
+#     "name":"Muhamamd Zaid",
+#     "age":23,
+#     "city":"Hyderabad"
+# }
+
+# student.clear()
+# print(student)
+
+
+
+# Scenario Question asked in interview
+api1 = {
+    "v1": "a1",
+    "v2": "a2",
+    "v3": "a3"
 }
 
-student.clear()
-print(student)
+api2 = {
+    "a1": 1,
+    "a2": 2,
+    "a3": 3
+}
+
+result = {}
+
+for key, value in api1.items():
+    result[key] = api2[value]
+
+print(result)
