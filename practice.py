@@ -218,21 +218,330 @@
 
 
 # Scenario Question asked in interview
-api1 = {
-    "v1": "a1",
-    "v2": "a2",
-    "v3": "a3"
+# api1 = {
+#     "v1": "a1",
+#     "v2": "a2",
+#     "v3": "a3"
+# }
+
+# api2 = {
+#     "a1": 1,
+#     "a2": 2,
+#     "a3": 3
+# }
+
+# result = {}
+
+# for key, value in api1.items():
+#     result[key] = api2[value]
+
+# print(result)
+
+
+# students = {
+#     "student1":{
+#         "name":"Muhammad Zaid",
+#         "age":23
+#     },
+#     "student2":{
+#         "name":"Umrah Zaid",
+#         "age":23
+#     }
+# }
+
+# print(students["student1"]["name"])
+
+# employees = {
+#     "emp1": {
+#         "name": "Zaid",
+#         "salary": 80000
+#     },
+#     "emp2": {
+#         "name": "Usman",
+#         "salary": 60000
+#     }
+
+# }
+
+# employees["emp1"]["salary"] = 100000
+
+# print(employees)
+
+
+# 1.
+# students = {
+#     "student1": {
+#         "name": "Ali",
+#         "age": 20,
+#         "city": "Karachi"
+#     },
+#     "student2": {
+#         "name": "Zaid",
+#         "age": 23,
+#         "city": "Hyderabad"
+#     }
+# }
+
+# print(students["student1"]["name"])
+# print(students["student2"]["age"])
+# print(students["student2"]["city"])
+
+
+# 2.
+# employee = {
+#     "emp1": {
+#         "name": "Ahmed",
+#         "department": "QA",
+#         "salary": 50000
+#     }
+# }
+
+# employee["emp1"]["salary"] = 70000
+# employee["emp1"]["city"] = "karachi"
+
+# print(employee)
+
+
+3.
+# company = {
+#     "employee1": {
+#         "name": "Ali",
+#         "age": 25,
+#         "department": "QA"
+#     },
+#     "employee2": {
+#         "name": "Zaid",
+#         "age": 23,
+#         "department": "Developer"
+#     }
+# }
+# # print(f"Name: {company['employee1']['name']}")
+# # print(f"Department: {company['employee1']['department']}")
+# # print("\n")
+# # print(f"Name: {company['employee2']['name']}")
+# # print(f"Department: {company['employee2']['department']}")
+
+# for key, value in company.items():
+#     print(key)
+#     print(value)
+
+
+# students = {
+#     "student1": {
+#         "name": "Ali",
+#         "marks": 85
+#     },
+#     "student2": {
+#         "name": "Zaid",
+#         "marks": 35
+#     },
+#     "student3": {
+#         "name": "Ahmed",
+#         "marks": 72
+#     }
+# }
+
+# for key, value in students.items():
+#     if value['marks'] >= 40:
+#         print(f"{value['name']} Passed")
+#     else:
+#         print(f"{value['name']} Failed")    
+
+
+
+
+
+
+
+
+
+# ----------------------Sets Advanced-------------------------------------
+# 1.
+# names = ["Ali", "Ahmed", "Ali", "Zaid", "Ahmed", "Usman"]
+
+# # Making the list to set
+# unique_names = set(names)
+# # print in sorted way according to the alphabets
+# print(sorted(unique_names))
+
+
+# 2.
+# python_students = {"Ali", "Ahmed", "Zaid", "Usman"}
+
+# qa_students = {"Ahmed", "Zaid", "Hamza", "Bilal"}
+
+# print(python_students)
+# print(qa_students)
+
+
+# 3.
+# emails = [
+#     "zaid@gmail.com",
+#     "ali@gmail.com",
+#     "zaid@gmail.com",
+#     "ahmed@gmail.com",
+#     "ali@gmail.com"
+# ]
+
+# unique_emails = set(emails)
+# print(unique_emails)
+
+
+# students = [
+#     {"name": "Ali", "course": "Python"},
+#     {"name": "Ahmed", "course": "QA"},
+#     {"name": "Ali", "course": "Python"},
+#     {"name": "Zaid", "course": "QA"}
+# ]
+
+
+
+# for _ , value in students:
+#     print(value)
+
+
+
+# -------------------------------Sets Practice---------------------------------------
+# names = {"Ali", "Ahmed", "Zaid"}
+
+# names.add("Usman")
+# names.remove("Ahmed")
+
+# print(names)
+
+# numbers = {10, 20, 30, 40, 50, 60}
+
+# for i in numbers:
+#     if i > 30:
+#         print(i)
+
+
+# emails = {
+#     "zaid@gmail.com",
+#     "ali@gmail.com",
+#     "hamza@gmail.com"
+# }
+
+# user = input("Enter an email\n")
+
+# if user in emails:
+#     print("Email Found")
+# else:
+#     print("Email not found")    
+
+
+
+# numbers = {5, 10, 15, 20, 25, 30, 35, 40}
+# even_num = 0
+# odd_num = 0
+
+# for i in numbers:
+#     if i % 2 == 0:
+#         even_num += 1
+#     else:
+#         odd_num += 1
+
+# print(f"Even Numbers: {even_num}")
+# print(f"Odd Numbers: {odd_num}")
+          
+
+
+# api1 = {101, 102, 103, 104, 105}
+# api2 = {103, 104, 105, 106, 107}
+
+
+# Common id
+# print(f"Common Id: {api1.intersection(api2)}")
+# # only api1 jo api2 men na ho 
+# print(f"Only Api1: {api1.difference(api2)}")
+# # only api2 jo api1 men na ho
+# print(f"Only Api2{api2.difference(api1)}")
+
+
+# # total unique ids
+# print(f"Unique Ids: {api1.union(api2)}")
+# different way 
+# unique_api = api1.union(api2)
+# print(unique_api)
+# print(len(unique_api))
+
+
+
+# fruits = {"Apple", "Banana", "Mango", "Orange", "Kiwi"}
+
+# for i in fruits:
+#     if len(i) > 5:
+#         print(i)
+
+
+
+# numbers = {11, 22, 33, 44, 55, 66, 77, 88}
+# divisible_by_2 = 0
+# not_divisible_by_2 = 0
+
+# for i in numbers:
+#     if i % 2 == 0:
+#         divisible_by_2 += 1
+#     else:
+#         not_divisible_by_2 += 1
+
+# print(f"Divisible by 2 = {divisible_by_2}")
+# print(f"Not Divisible by 2 = {not_divisible_by_2}")
+
+
+
+# Question 
+# Print the following:
+# Common users.
+# Users only in API 1.
+# Users only in API 2.
+# Total unique users.
+# Total number of unique users.
+
+
+# api1 = {
+#     "Ali",
+#     "Ahmed",
+#     "Zaid",
+#     "Usman",
+#     "Hamza"
+# }
+
+# api2 = {
+#     "Ahmed",
+#     "Hamza",
+#     "Bilal",
+#     "Ayan",
+#     "Usman"
+# }
+
+
+# # Common Users
+# print(f"Common users: {api1.intersection(api2)}")
+# # Only Api1 users jo api2 men na ho 
+# print(f"Api1 users: {api1.difference(api2)}")
+# # # Only Api2 users jo api1 men na ho 
+# print(f"Api2 users: {api2.difference(api1)}")
+
+# # total unique users
+# unique_users = api1.union(api2)
+# print(f"Unique Users: {unique_users}")
+# print(f"Total Numbers of unique users: {len(unique_users)}")
+
+
+students = {
+    "Ali",
+    "Ahmed",
+    "Zaid",
+    "Hamza",
+    "Bilal",
+    "Usman"
 }
 
-api2 = {
-    "a1": 1,
-    "a2": 2,
-    "a3": 3
-}
 
-result = {}
+name = input("Enter Name:\n").title() #agr alphabet men changes ho to osy fark nh parega
 
-for key, value in api1.items():
-    result[key] = api2[value]
-
-print(result)
+if name in students:
+    print("Student Found")
+else:
+    print("Student not found")    
