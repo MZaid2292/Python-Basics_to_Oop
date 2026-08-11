@@ -88,18 +88,32 @@
 # decorator(cube , 3)
 
 
-def marks(english, math, science):
-    print(f"English: {english}\nMath: {math}\nScience: {science}")
-    print(f"Total Marks: {english + math + science}")
+# def marks(english, math, science):
+#     print(f"English: {english}\nMath: {math}\nScience: {science}")
+#     print(f"Total Marks: {english + math + science}")
 
-def decorator(func , english, math, science):
-    print("Marks Calculation Started")
+# def decorator(func , english, math, science):
+#     print("Marks Calculation Started")
 
-    func(english, math, science)
+#     func(english, math, science)
 
-    print("Marks Calculation Finished")
+#     print("Marks Calculation Finished")
 
 
-decorator(marks, 70, 80 , 90)
+# decorator(marks, 70, 80 , 90)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -529,19 +529,203 @@
 # print(f"Total Numbers of unique users: {len(unique_users)}")
 
 
-students = {
-    "Ali",
-    "Ahmed",
-    "Zaid",
-    "Hamza",
-    "Bilal",
-    "Usman"
-}
+# students = {
+#     "Ali",
+#     "Ahmed",
+#     "Zaid",
+#     "Hamza",
+#     "Bilal",
+#     "Usman"
+# }
 
 
-name = input("Enter Name:\n").title() #agr alphabet men changes ho to osy fark nh parega
+# name = input("Enter Name:\n").title() #agr alphabet men changes ho to osy fark nh parega
 
-if name in students:
-    print("Student Found")
-else:
-    print("Student not found")    
+# if name in students:
+#     print("Student Found")
+# else:
+#     print("Student not found")    
+
+
+
+# ----------------------------------------------Tupple Practice---------------------------------------------
+
+# 1.
+# api1 = ("Ali", "Ahmed", "Zaid", "Usman", "Hamza")
+# api2 = ("Ahmed", "Hamza", "Bilal", "Ayan", "Usman")
+
+# print("Common Names")
+# for name in api1:    
+#     if name in api2:
+#         print(name) 
+
+
+# 2.
+# api1 = ("Ali", "Ahmed", "Zaid", "Usman", "Hamza")
+# api2 = ("Ahmed", "Hamza", "Bilal", "Ayan", "Usman")
+
+# print("Names only in API 1")
+# for name in api1:
+#     if name not in api2:
+#         print(name)
+
+
+# 3.
+# students = (
+#     "Ali",
+#     "Ahmed",
+#     "Zaid",
+#     "Usman",
+#     "Hamza"
+# )
+
+# name = input("Enter Name:\n").title()
+# if name in students:
+#     print("Student Found")
+# else:
+#     print("Student not found")
+
+
+
+# 4.
+# fruits = (
+#     "Apple",
+#     "Banana",
+#     "Mango",
+#     "Orange",
+#     "Kiwi",
+#     "Guava"
+# )
+
+# count = 0
+
+# for i in fruits:
+#     if len(i) >= 5:
+#         count += 1
+
+# print(f"Total Fruits: {count}")
+
+
+
+
+
+# --------------------------------------Functions Practice------------------------------------
+# 1.
+# def greet():
+#     print("Welcome Muhammad Zaid")
+
+
+# greet()
+
+# 2.
+# def student(name):
+#     print(f"Welcome {name}")
+
+# student("Muhammad Zaid")
+# student("Ali")
+# student("Ahmed")
+
+
+# 3.
+# def add(a,b):
+#     return a + b
+
+# print(add(10,20))
+# print(add(50,25))
+
+
+# 4.
+# def multiply(a,b):
+#     return a * b
+
+# result = multiply(10,5)
+# print(result)
+
+
+# 5.
+# def check_marks(marks):
+#     if marks >= 40:
+#         return "Pass"
+#     else:
+#         return "Fail"
+
+# print(check_marks(90))
+# print(check_marks(25))
+# print(check_marks(40))    
+
+
+# 5.
+# def even_odd(num):
+#     if num % 2 ==0:
+#         print("Even")
+#     else:
+#         print("Odd")
+
+# print(even_odd(10))
+# print(even_odd(7))
+# print(even_odd(24))
+
+
+
+# def login(username, password):
+#     if username == "admin" and password == "admin123":
+#         print("Login Successful")
+#     else:
+#         print("Invalid Credentials")
+
+# login("admin", "admin123")
+# login("Zaid", "Zaid123")
+
+
+# def welcome(name = "Greet"):
+#     print(f"Welcome {name}")
+
+# welcome("Muhammad Zaid")
+
+
+# def student(name, age, city):
+#     print(f"Name: {name}\nAge: {age}\nCity: {city} ")
+
+# student("Muhammad Zaid", 23, "Hyderabad")
+
+
+# def calculation(a,b):
+#     return a + b, a * b
+
+# sum_result, mul_result = calculation(10,5)
+# print(f"Sum: {sum_result}\nMultiplication: {mul_result}")
+
+
+# def largest(a,b,c):
+#     if a > b and a > c:
+#         return a
+#     elif b > a and b > c:
+#         return b
+#     else:
+#         return c
+
+# print(f" Largest: {largest(10,20,30)}")
+
+
+
+
+# def calcualation(a,b):
+#     return a + b, a - b, a * b, a / b
+
+# add, sub, mul, div = calcualation(10,5)
+# print(f"Addition: {add}\nSubtraction: {sub}\nMultiplication: {mul}\nDivision: {div}")
+
+
+
+def average(numbers):
+    total = sum(numbers)
+    count = len(numbers)
+    avg = total / count
+    return avg
+
+
+numbers = [10, 20, 30, 40, 50]
+
+result = average(numbers)
+
+print(f"Average = {result}")
