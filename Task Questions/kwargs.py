@@ -56,19 +56,19 @@
 #     department= "Software Engineering"
 # )
 
-def student_marks(**kwargs):
-    total = 0
+# def student_marks(**kwargs):
+#     total = 0
 
-    for subject, marks in kwargs.items():
-        total += marks
+#     for subject, marks in kwargs.items():
+#         total += marks
 
-    return total
+#     return total
 
-result = student_marks(
-    english=80,
-    maths=90,
-    science=85,
-    computer=95
-)    
+# result = student_marks(
+#     english=80,
+#     maths=90,
+#     science=85,
+#     computer=95
+# )    
 
-print(f"Total Marks: {result}")
+# print(f"Total Marks: {result}")

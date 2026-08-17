@@ -193,3 +193,165 @@
 
 # result = largest_num(15, 80, 25, 100, 45)        
 # print(f"Largest Number: {result}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ----------------------------------Lambda functions----------------------------------------
+# square = lambda num: num * num
+# print(square(5))
+
+
+# add = lambda a , b: a + b
+
+# result = add(10, 20)
+# print(result)
+
+
+# Practice Questions:
+# 1.
+# cube = lambda num: num ** 3
+# print(cube(4))
+
+# maximum = lambda a , b: a if a > b else b
+# result = maximum(10, 15)
+# print(result)
+
+
+
+# check_number = lambda num: "Positive" if num > 0 else "Zero" if num == 0 else "Negative"
+# print(check_number(-5))
+
+
+# Even odd
+# even_odd = lambda num: "Even" if num % 2 == 0 else "Odd"
+# print(even_odd(9))
+
+
+
+# final_price = lambda price, discount_price: price - (price * discount_price / 100)
+# print(final_price(1000, 20))
+
+
+
+
+# -----------------------------Map() function-------------------------------------------
+# map() is used to apply a function to every item in a list and return the transformed values.
+# numbers = [1,2,3,4]
+
+# result = list(map(lambda num: num * 2, numbers))
+# print(result)
+
+
+# --------------------Practice Question-------------------------------------
+# numbers = [2, 4, 6, 8, 10]
+# result = list(map(lambda num: num * 2, numbers))
+# print(result)
+
+# numbers = [1, 2, 3, 4, 5]
+# result = list(map(lambda num: num * num, numbers))
+# print(result)
+
+# names = ["zaid", "ali", "ahmed"]
+# result = list(map(lambda name: name.upper(), names))
+# print(result)
+
+# # numbers = [5, 10, 15, 20]
+# # result = list(map(lambda num: num + 10, numbers))
+# # print(result)
+
+
+# celsius = [0, 10, 20, 30]
+# result = list(map(lambda temp: (temp * 9/5) + 32, celsius))
+# print(result)
+
+
+
+# ----------------------------------Filter()------------------------------------------
+# filter() is used to select only those items from a list that match a condition.
+
+# Example
+# numbers = [1,2,3,4,5,6]
+# result = list(filter(lambda num: num % 2 == 0, numbers))
+# print(result)
+
+
+# -------------------------------Practice Questions-----------------------------------------
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+# result = list(filter(lambda num: num % 2 == 0, numbers))
+# print(result)
+
+
+# numbers = [-10, 5, -3, 8, 0, 12, -7]
+# result = list(filter(lambda num: num >= 0, numbers))
+# print(result)
+
+
+# numbers = [20, 55, 10, 80, 45, 100, 30]
+# result = list(filter(lambda num: num > 50, numbers))
+# print(result)
+
+
+# names = ["Ali", "Zaid", "Ahmed", "Bilal"]
+# result = list(filter(lambda name: name.startswith("A"), names))
+# print(result)
+
+
+# ages = [12, 18, 25, 16, 30, 15, 21]
+# result = list(filter(lambda age: age >= 18, ages))
+# print(result)
+
+
+
+# --------------------------reduce()---------------------------------------------------
+# reduce() is used to combine all items of a list and return one final value.
+
+# map()     → Har item ko transform karta hai
+# filter()  → Condition ke according items select karta hai
+# reduce()  → Sab items combine karke ek final value deta hai
+
+# Example
+# from functools import reduce
+# numbers = [2 , 3 , 4]
+# result = reduce(lambda x, y: x * y,numbers)
+# print(result)
+
+
+# --------------------------------Practice Questions------------------------------------------
+# 1.
+# from functools import reduce
+# numbers = [10, 20, 30, 40]
+# result = reduce(lambda x, y: x + y, numbers)
+# print(result)
+
+# 2.
+# from functools import reduce
+# numbers = [2, 5, 3, 4]
+# result = reduce(lambda a, b: a * b, numbers)
+# print(result)
+
+# 3.
+# from functools import reduce
+# numbers = [15, 80, 25, 100, 45]
+# result = reduce(lambda x , y: x if x > y else y, numbers)
+# print(result)
+
+
+# 4.
+# from functools import reduce
+# numbers = [15, 80, 25, 100, 45]
+# result = reduce(lambda x , y: x if x < y else y, numbers)
+# print(result)
+
+# 5.
