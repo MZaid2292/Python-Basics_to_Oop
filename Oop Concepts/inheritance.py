@@ -242,3 +242,120 @@
 
 # m = Manager("Ali", 60000, "IT")
 # m.show()
+
+
+
+# class Animal:
+#     def eat(self):
+#         print("Animal Eating")
+
+# class Dog(Animal):
+#     pass
+
+# d = Dog()
+# d.eat()
+
+
+# class Employee:
+#     def display(self):
+#         print("Employee")
+
+# class Developer(Employee):
+#     pass
+
+
+# d = Developer()
+# d.display()
+
+
+
+
+
+# ---------------------------------Practice Questions----------------------------------------
+
+# class Person:
+#     def __init__(self,name):
+#         self.name = name
+
+#     def introduce(self):
+#         print(f"Name: {self.name}")
+
+# class Student(Person):
+#     pass
+
+# s1 = Student("Muhammad Zaid")
+# s2 = Student("Umrah Zadi")
+# s1.introduce()
+# s2.introduce()
+
+
+# class Vehicle:
+#     def start(self):
+#         print("Vehicle is starting")
+
+# class Car(Vehicle):
+#     pass
+
+# class Bike(Vehicle):
+#     pass
+
+# c = Car()
+# b = Bike()
+# c.start()
+# b.start()
+
+
+
+# class Person:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+
+# class Student(Person):
+#     def __init__(self, name, age,university):
+#         super().__init__(name, age)
+#         self.university = university
+
+#     def introduce(self):
+#         print(f"Name: {self.name}\nAge: {self.age}\nUniversity: {self.university}")    
+
+
+# s1 = Student("Muhamamd Zaid", 23, "Muet")
+# s1.introduce()
+
+
+
+# class Employee:
+#     def __init__(self,name,salary):
+#         self.name = name
+#         self.salary = salary
+
+# class Developer(Employee):
+#     def __init__(self,name,salary,language):
+#         super().__init__(name,salary)
+#         self.language = language
+
+#     def detail(self):
+#         print(f"Name: {self.name}\nSalary: {self.salary}\nLanguage: {self.language}")
+
+
+# d = Developer("Muhammad Zaid", 80000, "Python")
+# d.detail()
+
+
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog is barking")
+
+class Puppy(Animal):
+    def play(self):
+        print("Puppy is playing")
+
+p = Puppy()
+p.eat()
+p.bark()
+p.play()

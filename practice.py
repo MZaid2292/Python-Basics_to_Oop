@@ -717,15 +717,27 @@
 
 
 
-def average(numbers):
-    total = sum(numbers)
-    count = len(numbers)
-    avg = total / count
-    return avg
+# def average(numbers):
+#     total = sum(numbers)
+#     count = len(numbers)
+#     avg = total / count
+#     return avg
 
 
-numbers = [10, 20, 30, 40, 50]
+# numbers = [10, 20, 30, 40, 50]
 
-result = average(numbers)
+# result = average(numbers)
 
-print(f"Average = {result}")
+# print(f"Average = {result}")
+
+
+
+
+# ----------------------------------Modules----------------------------------------------
+import math
+
+# print(math.sqrt(9))
+
+# print(math.pow(4,4))
+
+print(math.ceil(7.2))
